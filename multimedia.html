@@ -27,7 +27,16 @@
         @media (max-width: 768px) {
              .grid {
         grid-template-columns: repeat(2, 1fr); /* 2 columnas en móviles */
+       } 
+ }
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr; /* Una columna */
     }
+}
+
+    .item {
+        font-size: 14px; 
     .item img {
         max-width: 90%; /* Asegura que las imágenes se ajusten bien */
     }
