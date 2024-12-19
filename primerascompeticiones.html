@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Primeras Competiciones Minimotos</title>
+    <title>Moto2 JuniorGP</title>
     <style>
-        body {
+         body {
             margin: 0;
             padding: 0;
             font-family: 'FS Joy', sans-serif;
@@ -26,7 +26,7 @@
         grid-template-columns: repeat(2, 1fr); /* 2 columnas en móviles */
     }
     .item img {
-        max-width: 100%; /* Asegura que las imágenes se ajusten bien */
+        max-width: 90%; /* Asegura que las imágenes se ajusten bien */
     }
 }
         h1 {
@@ -35,7 +35,7 @@
             margin: 20px 0;
         }
 
-         .back-button {
+        .back-button {
             position: fixed;
             top: 20px;
             left: 20px;
@@ -57,18 +57,20 @@
         .back-button::before {
             content: '← ';
         }
+
         .image-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr); /* Cuatro columnas */
+           display: grid;
+            grid-template-columns: repeat(5, 1fr); /* Cuatro columnas */
             gap: 10px; /* Separación entre las imágenes */
+            column-gap:5px
             text-align: center;
-            margin-left: 100px;
-            margin-right: 1500px;
+            margin-left: 50px;
+            margin-right: 100px;
         }
 
         .image-grid img {
-            width: 100%; /* Tamaño máximo de las imágenes */
-            border-radius: 5px;
+            width: 100%;
+            border-radius: 10px;
             cursor: pointer;
             transition: transform 0.3s ease;
         }
@@ -92,8 +94,8 @@
         }
 
         .image-viewer img {
-            max-width: 100%;
-            max-height: 100%;
+            max-width: 90%;
+            max-height: 90%;
             border-radius: 5px;
         }
 
@@ -111,7 +113,7 @@
         }
 
         .close-button:hover {
-            background-color: darkorange;
+            background-color: #orange;
         }
     </style>
 </head>
@@ -129,9 +131,7 @@
         <img src="b8.jpg" alt="Imagen 8" onclick="openViewer('b8.jpg')">
         <img src="b9.jpg" alt="Imagen 9" onclick="openViewer('b9.jpg')">
         <img src="b10.jpg" alt="Imagen 10" onclick="openViewer('b10.jpg')">
-        <img src="b11.jpg" alt="Imagen 11" onclick="openViewer('b3.jpg')">
-    </div>
-
+        
     <!-- Visor de imágenes -->
     <div id="imageViewer" class="image-viewer" onclick="closeViewer()">
         <button class="close-button" onclick="closeViewer()">X</button>
