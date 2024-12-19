@@ -24,6 +24,15 @@
             height: 100vh; /* Ocupa toda la pantalla */
         }
 
+        @media (max-width: 768px) {
+             .grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en móviles */
+    }
+    .item img {
+        max-width: 90%; /* Asegura que las imágenes se ajusten bien */
+    }
+}
+
         .grid {
             display: grid;
             grid-template-columns: repeat(5, 1fr); /* Tres columnas */
